@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/dc48adefcd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link type="text/css" rel="stylesheet" href="./style.css" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <section class="container item-container" id="itemChoice">
+      <span class="header"><h2 class="head">Choose your items</h2></span>
+      <div class="white-space">
+        <div class="item">
+          <i class="fas fa-briefcase" id="briefcase"></i> <br />
+          <i class="fas fa-candy-cane" id="cane"></i><br />
+          <i class="fas fa-camera-retro" id="camera"></i><br />
+          <i class="fas fa-dice" id="dice"></i><br />
+          <i class="fas fa-graduation-cap" id="cap"></i><br />
+          <i class="fas fa-lightbulb" id="bulb"></i><br />
+        </div>
+        <div class="input">
+          <select name="quantity" id="briefcaseQ">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <select name="quantity" id="caneQ">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <select name="quantity" id="cameraQ">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <select name="quantity" id="diceQ">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <select name="quantity" id="capQ">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <select name="quantity" id="bulbQ">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <input type="submit" id="submit" />
+      </div>
+    </section>
+
+    <section class="container cart-container" id="shoppingCart">
+      <span class="header"><h2 class="head">Checkout</h2></span>
+      <div class="white-space">
+        <div><ul id="bought"></ul></div>
+        <span class="price-display"
+          ><h4>
+            Your total price is:
+          </h4>
+          <p id="price"></p
+        ></span>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="quantity.js"></script>
+  </body>
+</html>
