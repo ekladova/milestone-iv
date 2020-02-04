@@ -1,10 +1,4 @@
 // html elements
-const briefcaseQ = document.getElementById("briefcaseQ");
-const caneQ = document.getElementById("caneQ");
-const cameraQ = document.getElementById("cameraQ");
-const diceQ = document.getElementById("diceQ");
-const capQ = document.getElementById("capQ");
-const bulbQ = document.getElementById("bulbQ");
 const price = document.getElementById("price");
 
 const submitEl = document.getElementById("submit");
