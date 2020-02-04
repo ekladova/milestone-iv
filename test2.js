@@ -73,7 +73,6 @@ const itemsAr = itemsObj.map(function(product) {
   return product;
 });
 
-let displayAr = [];
 // console.log(itemsAr);
 
 // function to add to cart
