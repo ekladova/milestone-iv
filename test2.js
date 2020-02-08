@@ -96,6 +96,9 @@ const determine = () => {
 
     deleteElement.addEventListener("click", function() {
       deleteElement.parentNode.parentNode.removeChild(deleteElement.parentNode);
+      cartAr.splice(cartAr.indexOf(deleteElement.parentNode));
+      priceCalculator();
+      console.log(cartAr);
     });
 
     newImg.setAttribute("class", element.class);
@@ -107,12 +110,17 @@ const determine = () => {
     boughtList.append(newLi);
   });
 
-  let toPay = 0;
-  cartAr.forEach(el => {
-    let mult = el.price * el.quantity;
-    toPay += mult;
-  });
-  price.innerHTML = "£" + parseInt(toPay);
+  const priceCalculator = () => {
+    let toPay = 0;
+
+    cartAr.forEach(el => {
+      let mult = el.price * el.quantity;
+      toPay += mult;
+    });
+    price.innerText = "£" + parseInt(toPay);
+  };
+
+  priceCalculator();
 };
 
 submitEl.addEventListener("click", determine);
