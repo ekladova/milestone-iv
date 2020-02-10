@@ -97,8 +97,6 @@ const determine = () => {
     deleteElement.addEventListener("click", function() {
       deleteElement.parentNode.parentNode.removeChild(deleteElement.parentNode);
       cartAr.forEach(function(el) {
-        console.log(el.class);
-
         if (
           deleteElement.previousSibling.previousSibling.className === el.class
         ) {
@@ -106,8 +104,6 @@ const determine = () => {
         }
       });
 
-      console.log(deleteElement.previousSibling.previousSibling);
-      console.log(cartAr);
       priceCalculator();
     });
     newImg.setAttribute("class", element.class);
