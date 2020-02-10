@@ -122,7 +122,7 @@ const determine = () => {
       let mult = el.price * el.quantity;
       toPay += mult;
     });
-    price.innerText = "£" + parseInt(toPay);
+    price.innerText = "£" + toPay.toFixed(2);
   };
 
   priceCalculator();
