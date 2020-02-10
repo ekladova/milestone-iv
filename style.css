@@ -13,7 +13,7 @@ body {
 .white-space {
   background-color: white;
   box-shadow: inset lightslategray 1px 2px 2px 2px;
-  padding: 25px;
+  padding: 2vw;
   margin: 0 1em;
 }
 
@@ -23,10 +23,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.item-container .white-space {
-  height: 15em;
 }
 
 .cart-container {
@@ -40,12 +36,12 @@ body {
   display: flex;
   justify-content: center;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 2vw;
 }
 
 .head {
-  font-size: 2.5em;
-  padding: 0.5em 2em;
+  font-size: 2.5vw;
+  padding: 0.5em 2vw;
   box-shadow: lightslategray 1px 2px 2px;
   background-color: lightcoral;
   border-radius: 0 0 50% 50%;
@@ -68,11 +64,11 @@ body {
 
 li .fa,
 .fas {
-  font-size: 2em;
+  font-size: 3vw;
 }
 
 select {
-  margin: 1.5em 4.9em;
+  margin: 1.5em 3.5vw;
 }
 
 #submit {
@@ -105,11 +101,116 @@ li {
 }
 
 .forPrice {
-  font-size: 16px;
+  font-size: 1vw;
   margin: 0;
   height: 30px;
   position: relative;
   top: 7em;
   right: 5.2em;
   opacity: 0.7;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  select {
+    width: 2.5vw;
+    height: 2vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fas {
+    margin: 0;
+    height: 7vw;
+    padding: 0;
+  }
+
+  li .fas {
+    margin-right: 2vw;
+  }
+
+  select {
+    width: 9vw;
+    height: 5vw;
+    margin: 4vw;
+  }
+  #briefcaseQ {
+    margin-top: 0;
+  }
+
+  .container {
+    border: none;
+    float: none;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .white-space {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+    width: 70vw;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    max-height: 50vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 3.5vw;
+  }
+
+  .forPrice {
+    position: static;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .forPrice {
+    font-size: 2vw;
+  }
+
+  #submit {
+    height: 5vw;
+    padding: 0.2em;
+    text-align: center;
+    font-size: 3vw;
+    display: inline-flex;
+    align-self: flex-end;
+    position: absolute;
+    margin: auto;
+    right: 20vw;
+    text-align: center;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .head {
+    font-size: 5vw;
+    padding: 1em;
+  }
+
+  #white-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+  #bought li {
+    margin: 2em auto;
+  }
 }
