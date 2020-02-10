@@ -96,20 +96,11 @@ const determine = () => {
 
     deleteElement.addEventListener("click", function() {
       deleteElement.parentNode.parentNode.removeChild(deleteElement.parentNode);
-      cartAr.forEach(function(el) {
-        console.log(el.class);
-
-        if (
-          deleteElement.previousSibling.previousSibling.className === el.class
-        ) {
-          el.quantity = 0;
-        }
-      });
-
-      console.log(deleteElement.previousSibling.previousSibling);
-      console.log(cartAr);
+      cartAr.splice(cartAr.indexOf(deleteElement.parentNode));
       priceCalculator();
+      console.log(cartAr);
     });
+
     newImg.setAttribute("class", element.class);
     newLi.append(
       newImg,
